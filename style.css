@@ -1,0 +1,624 @@
+:root{
+    --fuentePrincipal: "Outfit", sans-serif;
+    --primario: #00317D;
+    --secundario: #00797D;
+    --terciario: #BD006B;
+    --negro: #000;
+    --blanco: #fff;
+    --gris: #F2F0F0;
+
+}
+
+html{
+    font-size: 62.5%;  /* 1rem=10px */
+     scroll-padding-top: 230px; /* 80px del header + 20px de espacio extra */
+     scroll-behavior: smooth;
+
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    height: 100%;
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.7rem;
+    margin:0;
+    background-color: #1b1b1b;
+}
+
+main .datos{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.barra{
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.header{
+    background-image: url(./images/FONDO\ R.P.E\ Negro.png);
+     height: 110rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.logo{
+     max-width: 25rem;
+    padding-top: 2rem;
+    text-align: left;
+    position: fixed;
+    margin-left: -43rem;
+}
+.navegacion{
+    margin-top: 8rem;
+    margin-left: 12rem;
+    display: flex;
+    justify-content: center;
+}
+.enlace{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    font-size: 2.9rem;
+    font-weight: 400;
+    color: var(--blanco);
+    padding-bottom: 0;
+}
+.enlace:hover,
+ .enlace--activo{
+ color: fuchsia;
+cursor: pointer;
+}
+
+
+.titulos{
+    text-align: left;
+    padding-top: 20rem;
+    padding-left: 10rem;
+}
+.titulo{
+    font-size: 13rem;
+    font-weight: 500;
+    color: var(--blanco);
+    margin-bottom: -5rem;
+    text-shadow: 5px 5px 15px#000;
+}
+.titulo2{
+    font-size: 13rem;
+    font-weight: 500;
+    color: var(--blanco);
+    margin-top: -5rem;
+    text-shadow: 5px 5px 15px#000;
+}
+.subtitulo{
+    font-weight: 400;
+    color: var(--blanco);
+    margin-top: -10rem;
+    text-shadow: 5px 5px 15px#000;
+}
+
+.botones{
+    text-align: right;
+    padding-top: 45rem;
+    margin-left: -25rem;
+}
+.contenedor{
+    display: flex;
+}
+
+ .boton-tornasolado{
+            position: relative;
+            padding: 28px 80px;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            width: 20rem;
+            margin-left: 66.6rem;
+            
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: linear-gradient(
+                45deg,
+                #ff00ff,
+                #ff0080,
+                #ff00ff,
+                #8000ff,
+                #ff00ff
+            );
+            background-size: 400% 400%;
+            animation: gradiente 3s ease infinite;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.5),
+                        0 0 40px rgba(255, 0, 255, 0.3);
+        }
+
+        .boton-tornasolado::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            transform: rotate(45deg);
+            animation: brillo 3s linear infinite;
+        }
+
+        @keyframes gradiente {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes brillo {
+            0% {
+                left: -50%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+        .boton-tornasolado:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.8),
+                        0 0 60px rgba(255, 0, 255, 0.5);
+        }
+
+        .boton-tornasolado:active {
+            transform: scale(0.98);
+        }
+.datos{
+    color: var(--blanco);
+}
+
+.titulop{
+    text-align: center;
+    color: rgb(255, 61, 229);
+    font-size: 5rem;
+
+}
+.titulop2{
+    text-align: center;
+    color: rgb(255, 0, 212);
+    font-size: 5rem;
+
+}
+
+.titulop3{
+    text-align: center;
+    color: rgb(212, 0, 255);
+    font-size: 5rem;
+}
+
+.text{
+    font-size: 3rem;
+}
+.text2{
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+
+.imagen{
+    max-width: 60rem;
+    border-radius: 20px;
+
+}
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 67rem;
+    padding-top: 5rem;
+}
+
+.boton-tornasolado2{
+            position: relative;
+            padding: 24px 70px;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            width: 20rem;
+            margin-left: 66.6rem;
+            
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: linear-gradient(
+                45deg,
+                #ff00ff,
+                #ff0080,
+                #ff00ff,
+                #8000ff,
+                #ff00ff
+            );
+            background-size: 400% 400%;
+            animation: gradiente 3s ease infinite;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.5),
+                        0 0 40px rgba(255, 0, 255, 0.3);
+        }
+
+        .boton-tornasolado2::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            transform: rotate(45deg);
+            animation: brillo 3s linear infinite;
+        }
+
+        @keyframes gradiente {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes brillo {
+            0% {
+                left: -50%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+        .boton-tornasolado2:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.8),
+                        0 0 60px rgba(255, 0, 255, 0.5);
+        }
+
+        .boton-tornasolado2:active {
+            transform: scale(0.98);
+        }
+.footer{
+    background-color: var(--negro);
+    z-index: 1000;
+    text-align: center;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    color: var(--blanco);
+}
+.contactanos{
+    font-size: 7rem;
+    margin-left: 8rem;
+    margin-right: 4rem;
+}
+.medio{
+    font-size: 3.3rem;
+    
+}
+.medios{
+    padding-top: 3rem;
+    margin-left: 13rem;
+}
+.escudo{
+    max-width: 20rem;
+    height: 20rem;
+    padding-left: 30rem;
+    padding-top: 2rem;
+}
+
+.textqs{
+    font-size: 2.8rem;
+    padding-right: 2rem;
+
+}
+.texta{
+    font-size: 3.1rem;
+    padding-right: 2rem;
+
+}
+
+.boton-tornasolado3{
+            position: relative;
+            padding: 10px 110px;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            width: 20rem;
+            margin-left: 0rem;
+            text-align: center;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: linear-gradient(
+                45deg,
+                #ff00ff,
+                #ff0080,
+                #ff00ff,
+                #8000ff,
+                #ff00ff
+            );
+            background-size: 400% 400%;
+            animation: gradiente 3s ease infinite;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.5),
+                        0 0 40px rgba(255, 0, 255, 0.3);
+        }
+
+        .boton-tornasolado3::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            transform: rotate(45deg);
+            animation: brillo 3s linear infinite;
+        }
+
+        @keyframes gradiente {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes brillo {
+            0% {
+                left: -50%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+        .boton-tornasolado3:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.8),
+                        0 0 60px rgba(255, 0, 255, 0.5);
+        }
+
+        .boton-tornasolado3:active {
+            transform: scale(0.98);
+        }
+
+.contenedor2{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    
+}
+
+.color-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid #e0e0e0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .color-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .color-btn.active {
+            border-color: #4CAF50;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+        }
+
+        .color-btn.white {
+            background-color: white;
+            border-color: #ccc;
+        }
+
+        .color-btn.black {
+            background-color: black;
+        }
+         .color-selector {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            margin-left: -80rem;
+            margin-bottom: -30rem;
+        }
+
+        .producto{
+            width: 80rem;
+            height: 80rem;
+            border-radius: 10px;
+            margin-top: 7rem;
+            margin-left: 11rem;
+            transition: 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding-bottom: 5rem;
+        }
+        
+        .header1{
+    background-color: #1b1b1b;
+   
+        }
+
+        .formulario{
+    background-color: var(--gris);
+    width: 50rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    justify-content: right;
+    margin-left: 41rem;
+   margin-top: -29rem;
+    
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.input-text{
+    width: 100%;
+    height: 4rem;
+    border: none;
+    padding:1.5rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+}
+
+.botonconfirmarcompra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.campo:nth-child(2), 
+.campo:nth-child(1) {
+grid-column: 1 / 3;
+}
+
+.campo{
+margin-bottom: 1rem;
+margin-right: 2rem;
+}
+
+.boton-tornasolado4{
+            position: relative;
+            padding: 20px 110px;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: white;
+            width: 20rem;
+            padding-left: 5rem;
+            margin-top: 2rem;
+            
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: linear-gradient(
+                45deg,
+                #ff00ff,
+                #ff0080,
+                #ff00ff,
+                #8000ff,
+                #ff00ff
+            );
+            background-size: 400% 400%;
+            animation: gradiente 3s ease infinite;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.5),
+                        0 0 40px rgba(255, 0, 255, 0.3);
+        }
+
+        .boton-tornasolado4::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            transform: rotate(45deg);
+            animation: brillo 3s linear infinite;
+        }
+
+        @keyframes gradiente {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes brillo {
+            0% {
+                left: -50%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+        .boton-tornasolado4:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.8),
+                        0 0 60px rgba(255, 0, 255, 0.5);
+        }
+
+        .boton-tornasolado4:active {
+            transform: scale(0.98);
+        }
+
+.contenedor5{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulosc{
+    color: var(--blanco);
+    margin-top: 0rem;
+    margin-left: 6rem;
+}
+.titulosc h1{
+    font-size: 6.9rem;
+}
+.titulosc h2{
+    font-size: 10rem;
+    margin-top: -6rem;
+}
+.descuento{
+    font-size: 4rem;
+    margin-left: 1rem;
+    margin-top: -2rem;
+    background-color: red;
+    padding: 10px 30px;
+    padding-bottom: 0%;
+    margin-right: 72rem;
+}
+.titulosc h4{
+ margin-top: -10rem;
+ margin-left: 1rem;
+ text-decoration: line-through;
+ color: var(--gris);
+ font-size: 3rem;
+}
