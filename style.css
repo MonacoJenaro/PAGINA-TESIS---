@@ -622,3 +622,255 @@ margin-right: 2rem;
  color: var(--gris);
  font-size: 3rem;
 }
+
+/* ============ TABLET (≤ 1024px) ============ */
+@media (max-width: 1024px) {
+
+    .header {
+        height: auto;
+        padding-bottom: 6rem;
+        background-position: center;
+    }
+
+    .barra {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        position: static;
+        margin-left: 0;
+        padding-top: 2rem;
+        max-width: 18rem;
+    }
+
+    .navegacion {
+        margin-top: 2rem;
+        margin-left: 0;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .enlace {
+        font-size: 2.2rem;
+    }
+
+    .titulos {
+        padding: 10rem 3rem 0 3rem;
+        text-align: center;
+    }
+
+    .titulo,
+    .titulo2 {
+        font-size: 7rem;
+        margin-bottom: -2rem;
+    }
+
+    .subtitulo {
+        margin-top: 1rem;
+    }
+
+    .botones {
+        padding-top: 4rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .boton-tornasolado {
+        margin-left: 0;
+        width: auto;
+        padding: 1.8rem 5rem;
+        font-size: 2.2rem;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3rem;
+        gap: 3rem;
+    }
+
+    .imagen {
+        max-width: 100%;
+    }
+
+    .text,
+    .text2,
+    .textqs,
+    .texta {
+        font-size: 2.4rem;
+        text-align: justify;
+    }
+
+    .contenedor1 {
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .boton-tornasolado2 {
+        margin-left: 0;
+        width: auto;
+        padding: 1.8rem 5rem;
+        font-size: 2.2rem;
+    }
+
+    .footer .contenedor,
+    .footer .contenedor2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactanos {
+        font-size: 4.2rem;
+        margin: 0;
+    }
+
+    .medios {
+        margin-left: 0;
+        padding-top: 2rem;
+    }
+
+    .medio {
+        font-size: 2.4rem;
+    }
+
+    .escudo {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    /* Página de compra */
+    .header1 .contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3rem 4rem 3rem;
+    }
+
+    .producto {
+        width: 100%;
+        height: auto;
+        margin: 4rem 0 0 0;
+    }
+
+    .titulosc {
+        margin: 3rem 0 0 0;
+        text-align: center;
+    }
+
+    .titulosc h1 {
+        font-size: 4.2rem;
+    }
+
+    .titulosc h2 {
+        font-size: 5.2rem;
+        margin-top: -2rem;
+    }
+
+    .titulosc h4 {
+        margin-top: -3rem;
+        margin-left: 0;
+    }
+
+    .descuento {
+        margin: 1rem auto 0 auto;
+        margin-right: 0;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 42rem;
+        margin: 3rem auto 0 auto;
+    }
+
+    .color-selector {
+        margin-left: 0;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+}
+
+/* ============ MÓVIL (≤ 768px) ============ */
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55%; /* un poquito más chico todo */
+    }
+
+    .titulo,
+    .titulo2 {
+        font-size: 4.8rem;
+    }
+    .titulo{
+        margin-bottom: 2rem;
+    }
+    .subtitulo {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlace {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+    }
+
+    .boton-tornasolado,
+    .boton-tornasolado2,
+    .boton-tornasolado3,
+    .boton-tornasolado4 {
+        font-size: 1.8rem;
+        padding: 1.4rem 3.5rem;
+    }
+
+    .datos {
+        margin-top: 4rem;
+    }
+
+    .titulop,
+    .titulop2,
+    .titulop3 {
+        font-size: 3.2rem;
+    }
+
+    .imagen {
+        border-radius: 1.2rem;
+    }
+
+    .footer p {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+    }
+
+    /* Página compra más compacta en móvil */
+    .titulosc h1 {
+        font-size: 3.4rem;
+    }
+
+    .titulosc h2 {
+        font-size: 4.2rem;
+    }
+
+    .titulosc h4 {
+        font-size: 2.2rem;
+    }
+
+    .descuento {
+        font-size: 2.4rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .formulario {
+        padding: 1.5rem;
+    }
+
+    .input-text {
+        font-size: 1.7rem;
+        height: auto;
+    }
+}
+
